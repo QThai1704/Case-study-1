@@ -2,11 +2,12 @@ package com.nqt.cs1.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomepageController {
 
-    @GetMapping(value = "/")
+    @RequestMapping(value = "/")
     public String homePage() {
         return "admin/homepage/show";
     }
